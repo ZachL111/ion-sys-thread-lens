@@ -1,0 +1,6 @@
+Package: IonSysThreadLens
+Type: Package
+Title: IonSysThreadLens
+Version: 0.1.0
+License: MIT
+Description: Build an R toolkit that studies thread behavior through deny and allow fixtures, with explainable decision traces and bounded memory input sets.
