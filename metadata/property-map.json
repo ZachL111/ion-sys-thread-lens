@@ -1,0 +1,28 @@
+{
+  "repo": "ion-sys-thread-lens",
+  "language": "R",
+  "category": "Systems programming",
+  "goal": "Build an R toolkit that studies thread behavior through deny and allow fixtures, with explainable decision traces and bounded memory input sets.",
+  "weights": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2
+  },
+  "thresholds": {
+    "ship": 159,
+    "watch": 113
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
