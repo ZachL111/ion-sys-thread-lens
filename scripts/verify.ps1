@@ -59,3 +59,7 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 Rscript tests/test_policy.R
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-ion-sys-thread-detail.ps1
+
+Rscript tests/test_domain_review.R
